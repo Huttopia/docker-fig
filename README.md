@@ -3,7 +3,6 @@
 ## Quick Start
 
 ```bash
-docker pull cedvan/fig:latest
 docker run --name fig --rm \
     -v /usr/bin/docker:/bin/docker \
     -v /var/run/docker.sock:/var/run/docker.sock \
