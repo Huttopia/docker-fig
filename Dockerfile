@@ -14,6 +14,9 @@ RUN apt-get -qq update \
 # install fig
 RUN pip install -U fig
 
+# Delete useless list packages
+RUN rm -rf /var/lib/apt/lists/*
+
 WORKDIR /src
 
 ENTRYPOINT ["fig"]
