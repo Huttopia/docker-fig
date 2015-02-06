@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM cedvan/ubuntu:14.04.20150206
 MAINTAINER dev@cedvan.com
 
 # Install apt-transport-https

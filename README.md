@@ -3,10 +3,8 @@
 ## Quick Start
 
 ```bash
-docker run --name fig --rm \
-    -v /usr/bin/docker:/bin/docker \
+alias fig="docker run --name fig --rm \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    -v /path/to/project:/src \
-    cedvan/fig:latest \
-    (fig command)
+    -v $PWD:/src \
+    cedvan/fig:latest"
 ```
